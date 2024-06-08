@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Style.css/Style.css">
+    <title>Mi creacion</title>
+</head>
+<body> 
+<!-- Inicio -->
+    <section id="Inicio">
+        <div class="content">
+            <header>
+                <div class="content__header">
+                    <h1>Leowary </h1>
+                    <nav id="nav" class="">
+                        <ul id="link">
+                            <li><a href="#Inicio" class="seleccionado" onclick="seleccionar(this)"> Inicio </a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)"> Sobre mi </a></li>
+                            <li><a href="#sevicios" onclick="seleccionar(this)"> Servicos </a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)"> Portafolio </a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)"> Contacto </a></li>
+                        </ul>
+                    </nav>
+                    <!-- Icon responsive menu-->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- Icon Redes sociales -->
+                    <div class="networks">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+            </header>
+            <div class="presentation">
+                <p class="welcome"> welcome </p>
+                <h2> Soy <span>Jose Barranco</span>, Diseñador Grafico</h2>
+                <p class="description">Me gusta la creacion de logos, 
+                    Diseños abstractos, edición de imagenes, me gusta los videojuegos,
+                    la música y el arte.</p>
+                <a href="#portafolio"> Ir al portafolio </a>
+            </div>
+        </div>
+    </section>
+<!-- Sobre mi -->
+
+<section id="sobremi">
+    <div class="conteiner-img">
+        <img src="./Style.css/Img/Anime yo.png" alt="">
+    </div>
+    <div class="sobremi">
+        <p class="title__seccion"> Sobre mi </p>
+        <h2>Bonjuer, soy <span> Leowary </span></h2>
+        <h3> Diseñador Grafico </h3>
+        <p>Me apasiona el diseño gráfico con una sólida formación en las artes visuales y una gran capacidad para transformar ideas en piezas visuales impactantes. Actualmente estoy cursando [Diseñador Grafico] en [Universidad Autonoma Del Caribe].</p>
+        <p>donde he adquirido habilidades técnicas y creativas que me permiten abordar proyectos de diseño con una perspectiva innovadora y eficiente.</p>
+        <a href="#"> Lee mi CV </a>
+    </div>
+</section>
+<!-- Servicios -->
+    <section id="sevicios">
+        <h3 class="title__seccion"> Servios </h3>
+        <div class="fila">
+            <div class="servicios">
+                <span class="icon"><i class="fa-solid fa-pen-nib"></i></span>
+                <h4> Adobe Illustraitor</h4>
+                <hr>
+                <ul class="service__tag">
+                    <li>Graphic</li>
+                </ul>
+                <p>Creaciones de logos, Marcas, Diseños Abstractos, Ilustraciones, Gráficos, Tipografia, Infografia y Identidad Corporativa. </p>
+            </div>
+            <div class="servicios">
+                <span class="icon"><i class="fa-solid fa-wand-magic"></i></span>
+                <h4> Adobe Photoshop </h4>
+                <hr>
+                <ul class="service__tag">
+                    <li>Graphic</li>
+                </ul>
+                <p> Manipulacion de imagenes, Diseños web, publicidad, Marketing, Diseños de portadas, Fotomontajes y Retoques Fotograficos.</p>
+            </div>
+            <div class="servicios">
+                <span class="icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                <h4> Adobe InDesign </h4>
+                <hr>
+                <ul class="service__tag">
+                    <li>Graphic</li>
+                </ul>
+                <p> Diseño Editorial, Materiales de Marketing, Presentaciones Profecionales, Informes, creacion de libros y E-books.</p>
+            </div>
+        </div>
+    </section>
+<!-- Habilidade -->
+    <div class="conteiner__skills" id="skills">
+        <h3> Habilidades </h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="list"></span> Photoshop </p>
+                <span class="percentaje">95%</span>
+            </div>
+            <div class="bar">
+                <div id="Photoshop" class="bar-process1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="list"></span> Illustraitor </p>
+                <span class="percentaje">85%</span>
+            </div>
+            <div class="bar">
+                <div id="AI" class="bar-process2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="list"></span> InDesign </p>
+                <span class="percentaje">50%</span>
+            </div>
+            <div class="bar">
+                <div id="ID" class="bar-process3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+    <body>
+        <!-- Portafolio -->
+         <section id="portafolio">
+            <h3 class="title__seccisss"> Mis proyectos</h3>
+            </div>
+|   <main>
+    <div class="card">
+        <img src="./Style.css/Img/Copia Tierra.png" alt="">
+        <div class="info">
+         <h1> Diseño Abstracto Fuego</h1>
+         <p>Este diseño fue creado a mis inicios de semestre y fue unos de los mejores que hice.</p>
+         <a href="#" class="btn" > saber mas </a>   
+    </div>
+</div>
+</div>
+    <div class="card">
+        <img src="./Style.css/Img/Fuego Png Copia.png" alt="">
+        <div class="info">
+            <h1> Diseño Abstrato Tierra</h1>
+            <p> Este diseño me inspire en como podria hacer un dibujo Abstracto de la tierra.</p>
+            <a href="#" class="btn" > saber mas </a>  
+        </div>
+    </div>
+    <div class="card">
+        <img src="./Style.css/Img/Vogue PNG Copia.png" alt="">
+        <div class="info">
+            <h1> Diseño Vogue y su historia </h1>
+            <p> Este diseño quise hacerle unas cartas para la compañia de vogue.</p>
+            <a href="#" class="btn" > saber mas </a>  
+        </div>
+    </div>
+</section>
+        <!-- Contactos -->
+    <section id="contacto">
+        <h3 class="title__contacto"> Contactanos ahora </h3>
+        <div class="conteiner__form">
+            <form action="">
+                <div class="fila__mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input__mitad">
+                    <input type="text" placeholder="Dirección de Emeil" class="input__mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input__full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id=""  cols=""  rows="10" placeholder="Tu Mensaje..." class="input__full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn__enviar" >
+            </form>
+        </div>
+    </section>
+        <!-- Footer -->
+        <footer>
+            <p> No se que poner aqui - 2024</p>
+            <div class="networks">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class=""><i class="fa-brands fa-instagram"></i></i></a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>
